@@ -5,8 +5,7 @@ from random import randrange
 while True :
     
     time.sleep(randrange(1,10))
-    os.system("TASKKILL /F /IM chrome.exe")
+    subprocess.call("TASKKILL /F /IM chrome.exe", shell=True)
     #time.sleep(randrange(1,90))
-    
         
         
