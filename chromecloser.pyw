@@ -4,12 +4,12 @@ import time
 from random import randrange 
 #creating a forever loop
 
-if platform.release() == "xp":
+if platform.release() == "XP":
     while True :
         #time.sleep(randrange(1,3000))
         #for testing#
         time.sleep(randrange(1,10))
-        subprocess.call("tskill chrome.exe", shell=True)
+        subprocess.call("tskill chrome", shell=True)
 else :
     while True :
         #time.sleep(randrange(1,3000))
